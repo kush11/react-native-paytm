@@ -7,9 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
-<!-- https://securegw-stage.paytm.in/theia/processTransaction -->
+
 <body>
-    <form name="f1" id="myForm" method="GET" action="https://securegw-stage.paytm.in/theia/processTransaction">
+    <form name="f1" id="myForm" method="post" action="https://securegw-stage.paytm.in/theia/processTransaction">
         <% for (name in result) {
             %>
         <input type="hidden" name='<%= name %>' value='<%= result[name] %>' />
